@@ -42,25 +42,31 @@ body
 {
     padding: 0.5em;
     margin: 0.5em;
-    min-width: 5em;
-    
-    background-color: var(--highlightColor);
+
     text-align: center;
     display: inline-block;  /*aligning tabs horizontally in the header*/
     vertical-align: middle; /*aligning tabs vertically in the header*/
     cursor: pointer;
     
-    border: solid 0.2em var(--highlightColor);
-    border-radius: 0.5em;
-    
     font-size: 1.4em;
-    transition: all 0.3s;
 }
 
-.Header .Tab:hover
+.Tab a
+{
+    padding: 0.5em;
+    background-color: var(--highlightColor);
+    border: solid 0.2em var(--highlightColor);
+    border-radius: 0.5em;
+    display: inherit;
+    min-width: 5em;
+    transition: color 0.8s, border-color 0.8s;
+}
+
+.Tab a:hover
 {
     color: var(--accentColor);
     border-color: var(--accentColor);
+    transition-duration: 0.3s;
 }
 
 .TabIcon
@@ -70,11 +76,18 @@ body
     align-content: center;
 }
 
+.Intro p,ul
+{
+    font-size: 1.2em;
+}
+
 .Page th    /*table headers (aircraft names)*/
 {
     padding: 0.2em;
+    padding-top: 2em;
     text-align: left;
     font-size: 1.6em;
+    letter-spacing: 0.05em;
 }
 
 .Page
@@ -87,7 +100,7 @@ body
 
 }
 
-.Page img
+.Page img   /*aircraft images*/
 {
     border: solid var(--highlightColor) 0.5em;
     border-radius: 1.2em;
@@ -101,12 +114,16 @@ body
     border-radius: 2em;
 }
 
-.AircraftSeparator
+.Page td    /*line separator between aircraft entries (table rows)*/
+{
+    border-bottom: solid var(--highlightColor) 0.1em;
+}
+
+.Separator /*separator for use with an hr element*/
 {
     width: 75%;
     display: inline-flex;
     background-color: var(--highlightColor);
-    height: 0.18em;
+    height: 0.1em;
     margin-bottom: 3em;
-    
 }
