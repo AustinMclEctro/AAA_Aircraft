@@ -81,14 +81,6 @@ body
     font-size: 1.2em;
 }
 
-.Page th    /*table headers (aircraft names)*/
-{
-    padding: 0.2em;
-    padding-top: 2em;
-    text-align: left;
-    font-size: 1.6em;
-    letter-spacing: 0.05em;
-}
 
 .Page
 {
@@ -98,6 +90,20 @@ body
     margin-top: 1em;
     margin-bottom: 1em;
 
+}
+
+.Page th    /*table headers (aircraft names)*/
+{
+    padding: 0.2em;
+    padding-top: 2em;
+    text-align: left;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+}
+
+.Page table
+{
+    padding: 1em;
 }
 
 .Page img   /*aircraft images*/
@@ -111,7 +117,7 @@ body
 .Page img:hover
 {
     border-color: var(--accentColor);
-    border-radius: 2em;
+    border-radius: 3em;
 }
 
 .Page td    /*line separator between aircraft entries (table rows)*/
