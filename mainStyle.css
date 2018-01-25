@@ -17,6 +17,12 @@
     font-style: normal;
 }
 
+img /*mobile-/low-resolution safe*/
+{
+    max-width: 100%;
+    height: auto;
+}
+
 body
 {
     font-family: 'isidoralight';
